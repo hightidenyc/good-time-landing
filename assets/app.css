@@ -1,3 +1,35 @@
 * {
-  border: 1px solid blue;
+  box-sizing: border-box;
+}
+body {
+  background: #f8f0e3;
+}
+
+main.main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.pane {
+  width: 50%;
+  flex: 1;
+  flex-basis: 50%;
+}
+
+.pane__img {
+  overflow: hidden;
+}
+
+.pane__img img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.pane__detail {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
