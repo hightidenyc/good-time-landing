@@ -76,7 +76,7 @@ main.main {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   main.main {
     display: flex;
   }
@@ -104,10 +104,16 @@ main.main {
 }
 
 .pane__detail {
-  padding: var(--size-lg);
+  padding: var(--size-md);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .pane__detail {
+    padding: var(--size-lg);
+  }
 }
 
 .logoSvg {
