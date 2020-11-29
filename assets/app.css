@@ -1,8 +1,34 @@
+/*
+ * Fonts
+ */
+
+@font-face {
+  font-family: "Nib Pro";
+  src: local("Nib Pro Light"), local("/assets/fonts/Nib-Pro-Light"),
+    url("/assets/fonts/NibPro-Light.woff2") format("woff2"),
+    url("/assets/fonts/NibPro-Light.woff") format("woff"),
+    url("/assets/fonts/NibPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/**
+ * Standard
+ */
+
+:root {
+  --size-sm: 1rem;
+  --size-md: 1.5rem;
+  --size-lg: 2.5rem;
+}
+
 * {
   box-sizing: border-box;
 }
+
 body {
   background: #f8f0e3;
+  line-height: 1.3;
 }
 
 main.main {
@@ -28,8 +54,13 @@ main.main {
   display: block;
 }
 .pane__detail {
-  padding: 4rem;
+  padding: var(--size-lg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+h2 {
+  font-size: var(--size-md);
+  font-family: "Nib Pro";
 }
