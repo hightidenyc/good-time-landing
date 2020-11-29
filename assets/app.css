@@ -32,7 +32,7 @@ body {
 }
 
 main.main {
-  display: flex;
+  /* display: flex; */
   min-height: 100vh;
   width: 100%;
 }
@@ -58,6 +58,11 @@ main.main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.logoSvg {
+  width: 100%;
+  transform: translateY(-7%);
 }
 
 h2 {
