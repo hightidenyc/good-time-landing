@@ -38,13 +38,6 @@ textarea {
   opacity: 1;
 }
 
-input,
-select {
-  border-bottom: 1px solid black;
-  width: 100%;
-  padding: var(--size-xs) 0;
-}
-
 select,
 button {
   cursor: pointer;
@@ -130,11 +123,18 @@ h2 {
  * Custom form styles
  */
 
-form {
+.inputForm {
   margin: var(--size-sm) 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: var(--size-sm);
+}
+
+.inputForm input,
+.inputForm select {
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: var(--size-xs) 0;
 }
 
 input::placeholder,
